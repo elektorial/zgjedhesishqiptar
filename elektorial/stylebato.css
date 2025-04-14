@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #cce7c8 ;
+}
+
+
+header {
+	position: absolute;
+	top: -2.7%;
+	width: 90%;
+	margin: 0 5%;
+	background: url(header.jpg);
+	background-size: cover;
+	background-position: center;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	-webkit-box-shadow: 0px 0px 53px -32px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 53px -32px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 53px -32px rgba(0,0,0,0.75);
+z-index: 999;
+}
+
+header .hrline1 {
+	top: 0;
+	position: relative;
+	border: 3px solid red;
+	max-width: 99.6%;
+}
+
+header .hrline2 {
+	bottom: 1.35rem;
+	position: relative;
+	border: 3px solid black;
+	max-width: 99.6%;
+}
+
+header picture .logoja {
+	position: relative;
+	top: -2rem;
+	max-height: 6rem;
+	width: auto;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .hrline3 {
+	position: relative;
+	max-width: 50%;
+	margin: 0 25%;
+	border: 1px solid #e6daff;
+}
+
+header ul {
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	list-style-type: none;
+	align-content: center;
+	width: 100%;
+	text-align: center;
+	top: 0rem;
+	position: relative;
+	color: white;
+}
+
+header ul li {
+	display: inline-block;
+	justify-content: space-between;
+	padding: 0.8rem;
+
+}
+
+header ul li a{
+	text-decoration: none;
+	text-align: left;
+}
+
+header ul li a:hover {
+	color: #c7afff;
+	transition: 0.5s;
+}
+
+header ul li a button {
+	position: relative;
+	background-color: #0952fa;
+	padding: 0.35rem 0.5rem;
+	border: 1px solid #0952fa;
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+	z-index: 998;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+header ul li a button:hover {
+	background-color: transparent;
+	transition: 0.2s;
+	border: 1px solid #0952fa;
+	color: #0952fa;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.hrline4 {
+	width: 85%;
+	position: relative;
+	margin: 1% 7.5% 3% 7.5%;
+	border: 1px solid #2c3e50;
+	opacity: 0.7;
+	border-radius: 30%;
+}
+
+
+.footer {
+	bottom: -100%;
+	width: 90%;
+	margin: 0 5%;
+	position: absolute;
+	font-family: "Inter", sans-serif;
+	color: #9ea8b5;
+}
+
+.footer img, .footercont {
+	grid-gap: none;
+}
+
+.footer .footercont {
+	background: #000000;
+background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(10, 7, 18, 1) 50%, rgba(21, 21, 31, 1) 100%);
+padding: 2%;
+text-align: justify;
+}
+
+.footercont div{
+	display: inline-grid;
+	grid-gap: rem(1, 1);
+}
+
+.footercont .info {
+	width: 33%;
+	padding-right: 1rem;
+}
+
+.footercont .info2 {
+	width: 33%;
+	padding-right: 1rem;
+}
+
+.info2 img {
+	width: 75%;
+	filter: invert(90%);
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.info2 img:hover {
+	filter: invert(0.6);
+	transition: 0.5s;
+}
+
+.info2 .partner {
+	text-align: center;
+	font-weight: 600;
+}
+
+.contact {
+	width: 33%;
+	padding-right: 1rem;
+	text-align: center;
+}
+
+.contact ul {
+	list-style-type: none;
+	margin-bottom: 2%;
+}
+
+.contact ul li {
+		display: inline;
+		padding: 0 2%;
+}
+
+.contact ul li img {
+	max-width: 10%;
+	cursor: pointer;
+	filter: invert(0.8);
+}
+
+.contact ul li img:hover {
+	filter: invert(0.6);
+	transition: 0.5s;
+}
+
+.contact a button {
+	position: relative;
+	background-color: #0952fa;
+	padding: 0.35rem 0.5rem;
+	border: 1px solid #0952fa;
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	margin-bottom: 2%;
+}
+
+.contact .logo {
+	max-width: 80%;
+	height: auto;
+	cursor: pointer;
+}
+
+.contact .logo:hover {
+	opacity: 0.8;
+	transition: 0.5s ease;
+}
+
+content {
+	position: absolute;
+	top: 25%;
+	width: 95%
+	margin: 0 2.5%;
+	padding: 10%;
+}
+
+content h1 {
+	position: relative;
+	text-align: center;
+}
+
+@media (max-width:1028px){
+	content {
+		top: 35%;
+	} 
+
+	.footer {
+		bottom: -150%;
+	}
+
+}
+
+@media (max-width: 975px) {
+		.footer {
+		bottom: -150%;
+	}
+
+	.footer .footercont div {
+		display: block;
+		width: 90%;
+		margin: 0 5%;
+		text-align: center;
+	}
+}
+
+
+
+@media (max-width: 426px) {
+
+	content {
+		top: 43%;
+	}
+
+	.pjesa2 .seksion {
+		width: 100%;
+		margin: 0;
+	}
+
+	.ealb p {
+		font-size: 1.5rem;
+	}
+
+	.dyt .pare {
+		font-size: 1.8rem;
+	}
+
+	.dyt .dyte {
+		font-size: 1rem;
+	}
+
+	.dyt .chati .chatinfo {
+		font-size: 1rem;
+		text-align: right;
+	}
+
+	.footer {
+		bottom: -250%;
+	}
+}

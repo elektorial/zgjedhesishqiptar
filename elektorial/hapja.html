@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    .open1 {
+    z-index: 990;
+    position: absolute;
+    width: 78%;
+    background: url("Partite/baze.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    top: 10%;
+    left: 7.5%;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    transition: background-image 0.5s ease-in-out;
+    -webkit-box-shadow: 0px 0px 63px -15px rgba(247,15,15,1);
+-moz-box-shadow: 0px 0px 63px -15px rgba(247,15,15,1);
+box-shadow: 0px 0px 63px -15px rgba(247,15,15,1);
+    }
+
+    .open1 div{
+        display: inline-grid;
+        margin: 1em 3em;
+        font-family: "Inter", sans-serif;
+    }
+
+    .parti {
+        position: relative;
+        width: auto;
+        padding-right: 2em;
+        height: 95%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        backdrop-filter: brightness(0.9);
+    }
+
+    .parti .part li {
+        position: relative;
+        list-style-type: none;
+        display: block;
+        padding-bottom: 0.4em;
+    }
+
+    .parti .part li img {
+        height: 100px;
+        width: auto;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .open1 .prezantimi {
+        width: 64%;
+        height: 92%;
+        position: absolute;
+    }
+
+    .prezantimi span {
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    span .lider {
+        display: flex;
+        position: relative;
+        width: 98%;
+        height: auto;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    span .infosm {
+        position: relative;
+        width: 40%;
+        height: 20%;
+        left: 50%;
+    }
+
+    span .infosm h1, .kryetar {
+        text-align: right;
+        font-family: "Inter", sans-serif;
+        color: white;
+        position: relative;
+    }
+
+    span .infosm h1 {
+        bottom: 1em;
+        font-size: 2.5em;
+        font-weight: 800;
+        padding: none;
+    }
+
+    span .infosm .kryetar {
+        font-size: 1.1em;
+        bottom: 4.6em;
+    }
+
+    span .infosm .hrline-vl {
+        position: relative;
+        width: 100%;
+        border: 0.5px solid #e7e7e7;
+        bottom: 5.5em;
+    }
+
+    span .prez {
+        text-align: left;
+        width: 51%;
+        left: 0;
+        top: 55%;
+        position: absolute;
+        color: white;
+        font-size: 0.95em;
+        font-weight: 300;
+        backdrop-filter: brightness(0.96);
+        border-radius: 10px;
+    }
+
+    span .shkarko {
+        font-size: 1.1em;
+        color: white;
+        text-align: right;
+        position: relative;
+        right: 5%;
+        bottom: 10%;
+    }
+
+    span button {
+        position: relative;
+        left: 75%;
+        padding: 0.7em;
+        font-size: 1em;
+        border-radius: 27px;
+        bottom: 10%;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+    }
+
+    span .prog {
+        background: #e11414;
+        border: 1px solid #e11414;
+    }
+
+    span .prog:hover {
+        background: transparent;
+        backdrop-filter: blur(15px);
+        border-color: white;
+        transition: 0.5s;
+    }
+
+    span .prog1 {
+        background: transparent;
+        backdrop-filter: blur(15px);
+        border: 1px solid white;
+    }
+
+    span .prog1:hover {
+        transition: 0.5s;
+        background: #00af62;
+        border: 1px solid #00af62;
+    }
+
+    .span-3 .shkarko,.span-3 button {
+        bottom: 3%;
+    }
+
+    @media (max-width: 1440px) {
+        .open1 {
+    z-index: 990;
+    position: absolute;
+    width: 78%;
+    background: url("Partite/baze.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    top: 10%;
+    left: 7.5%;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    transition: background-image 0.5s ease-in-out;
+    -webkit-box-shadow: 0px 0px 63px -15px rgba(247,15,15,1);
+-moz-box-shadow: 0px 0px 63px -15px rgba(247,15,15,1);
+box-shadow: 0px 0px 63px -15px rgba(247,15,15,1);
+    }
+
+    .open1 div{
+        display: inline-grid;
+        margin: 1em 3em;
+        font-family: "Inter", sans-serif;
+    }
+
+    .parti {
+        position: relative;
+        width: auto;
+        padding-right: 2em;
+        height: 95%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        backdrop-filter: brightness(0.9);
+    }
+
+    .parti .part li {
+        position: relative;
+        list-style-type: none;
+        display: block;
+        padding-bottom: 0.4em;
+    }
+
+    .parti .part li img {
+        height: 100px;
+        width: auto;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .open1 .prezantimi {
+        width: 64%;
+        height: 92%;
+        position: absolute;
+    }
+
+    .prezantimi span {
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    span .lider {
+        display: flex;
+        position: relative;
+        width: 98%;
+        height: auto;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    span .infosm {
+        position: relative;
+        width: 40%;
+        height: 20%;
+        left: 50%;
+    }
+
+    span .infosm h1, .kryetar {
+        text-align: right;
+        font-family: "Inter", sans-serif;
+        color: white;
+        position: relative;
+    }
+
+    span .infosm h1 {
+        bottom: 1em;
+        font-size: 2.5em;
+        font-weight: 800;
+        padding: none;
+    }
+
+    span .infosm .kryetar {
+        font-size: 1.1em;
+        bottom: 4.6em;
+    }
+
+    span .infosm .hrline-vl {
+        position: relative;
+        width: 100%;
+        border: 0.5px solid #f1a9ff;
+        bottom: 5.5em;
+    }
+
+    span .prez {
+        text-align: left;
+        width: 51%;
+        left: 0;
+        top: 55%;
+        position: absolute;
+        color: white;
+        font-size: 0.95em;
+        font-weight: 300;
+        backdrop-filter: brightness(0.96);
+        border-radius: 10px;
+    }
+
+    span .shkarko {
+        font-size: 1.1em;
+        color: white;
+        text-align: right;
+        position: relative;
+        right: 5%;
+        bottom: 10%;
+    }
+
+    span button {
+        position: relative;
+        left: 75%;
+        padding: 0.7em;
+        font-size: 1em;
+        border-radius: 27px;
+        bottom: 10%;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+    }
+
+    span .prog {
+        background: #e11414;
+        border: 1px solid #e11414;
+    }
+
+    span .prog:hover {
+        background: transparent;
+        backdrop-filter: blur(15px);
+        border-color: white;
+        transition: 0.5s;
+    }
+
+    span .prog1 {
+        background: transparent;
+        backdrop-filter: blur(15px);
+        border: 1px solid white;
+    }
+
+    span .prog1:hover {
+        transition: 0.5s;
+        background: #00af62;
+        border: 1px solid #00af62;
+    }
+
+    .span-3 .shkarko,.span-3 button {
+        bottom: 3%;
+    }
+    }
+    
+    @media (max-width: 1028px) {
+
+    .open1 {
+        flex-direction: column;
+        height: 70em;
+        padding: 1em;
+        background-repeat: no-repeat;
+        background-position-x: -500px;
+    }
+
+    .parti {
+        position: relative;
+        width: auto;
+        text-align: center;
+        height: auto;
+        border-radius: 20px;
+        left: 20%;
+        gap: 1em;
+    }
+
+    .parti .part li{
+        display: inline;
+    }
+
+    .open1 .prezantimi {
+        height: 100%;
+        position: absolute;
+
+    }
+
+    span .lider {
+        right: 93%;
+        position: relative;
+        top: 20%;
+        width: 140%;
+    }
+
+    span .infosm {
+        position: absolute;
+        text-align: right;
+        left: -42%;
+        top: 45%;
+        width: 80%;
+    }
+
+    span .kryetar {
+        position: absolute;
+        top: 1em;
+        left: 62%;
+    }
+
+    span .hrline-vl {
+        position: relative;
+        height: 0;
+        bottom: 4em;
+        width: 30%;
+    }
+
+    span .prez {
+        text-align: right;
+        width: 80%;
+        font-size: 1.3em;
+        left: -33%;
+    }
+
+    span .shkarko {
+        position: absolute;
+        top: 30%;
+        left: -90%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .open1 {
+        top: 10%;
+        left: 0;
+        width: 77%;
+        height: 90%;
+        margin: 4%;
+        background: inherit;
+        background-size: cover;
+        background: #ffbba8;
+        background-position: center;
+    }
+
+    .parti {
+        width: auto;
+        height: auto;
+        left: 10%;
+        top: -2%;
+    }
+
+    span .lider {
+        position: absolute;
+        left: -127.5%;
+        top: 16%;
+    }
+
+    .prezantimi span .infosm {
+        position: absolute;
+        left: -113%;
+        top: 37%;
+        width: 90%;
+        align-content: center;
+    }
+
+    span .infosm h1{
+        position: relative;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    span .infosm .kryetar {
+        position: relative;
+        text-align: center;
+        font-size: 1.1em;
+        left: 0;
+        top: -90%;
+    }
+
+    .infosm .hrline-vl {
+        top: -310%;
+    }
+
+    span .prez {
+        width: 100%;
+        left: -103%;
+        top: 50%;
+        text-align: left;
+        font-size: 90%;
+    }
+
+    span .shkarko {
+        position: absolute;
+        top: 77%;
+        font-size: 1em;
+        width: 110%;
+        left: -80%;
+        text-align: left;
+        font-size: 88%;
+    }
+
+    .prezantimi button {
+        position: relative;
+        top: 82%;
+        left: -75%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+.open1 {
+        top: 10%;
+        left: 0;
+        width: 77%;
+        height: 100%;
+        margin: 7%;
+        background: inherit;
+        background-size: cover;
+        background: #ffbba8;
+        background-position: center;
+    }
+
+    .parti {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: auto;
+        height: auto;
+        left: 1%;
+        top: -2%;
+    }
+
+    .parti .part li {
+        left: -8%;
+    }
+
+    .parti .part li img {
+        width: 37%;
+        height: auto;
+        left: -5%;
+    }
+
+
+    span .lider {
+        position: absolute;
+        left: -162%;
+        top: 13%;
+    }
+
+    .prezantimi span .infosm {
+        position: absolute;
+        left: -160%;
+        top: 25%;
+        width: 90%;
+        align-content: center;
+    }
+
+    span .infosm h1{
+        position: relative;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    span .infosm .kryetar {
+        position: relative;
+        text-align: center;
+        font-size: 1.1em;
+        left: 0;
+        top: -68%;
+    }
+
+    span .prez {
+        width: 100%;
+        left: -140%;
+        top: 40%;
+        text-align: left;
+        font-size: 80%;
+    }
+
+    span .shkarko {
+        position: absolute;
+        top: 77%;
+        font-size: 1em;
+        width: 100%;
+        left: -140%;
+        text-align: left;
+        font-size: 88%;
+    }
+
+    .prezantimi button {
+        position: relative;
+        top: 82%;
+        left: -130%;
+    }
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="open1">
+        <div class="parti">
+            <ul class="part">
+                <li><img class="logo" src="Partite\PSSH.jpg"></li>
+                <li><img class="logo" src="Partite\BASHKE.jpg"></li>
+                <li><img class="logo" src="Partite\PSD.jpg"></li>
+            </ul>
+        </div>
+        <div class="prezantimi">
+        <span class="span-1">
+            <img class="lider" src="Kryetaret\krye_rama.webp">
+            <div class="infosm">
+            <h1>Partia Socialiste</h1>
+            <p class="kryetar"><b>Kryetar: </b>Edi Rama</p>
+            <hr class="hrline-vl">
+            </div>
+            <p class="prez"><b>Partia Socialiste e Shqipërisë (PS)</b> është një nga partitë kryesore politike në Shqipëri, me orientim social-demokrat. Ajo u themelua në vitin 1991 si pasardhëse e Partisë së Punës së Shqipërisë, pas rënies së regjimit komunist.<br> PS ka qenë në pushtet për periudha të gjata, duke përfshirë qeverisjen aktuale që nga viti 2013 nën drejtimin e kryeministrit Edi Rama.<br><br> Partia fokusohet në <b>reforma ekonomike, integrimin europian dhe modernizimin e infrastrukturës,</b> por është kritikuar për çështje si korrupsioni dhe liria e medias.</p>
+            <p class="shkarko">Mëso programin elektoral këtu:</p>
+            <button onclick="window.open('https://ps.al/shqiperia-2030/');" class="prog">Programi</button>
+            <button onclick="window.open('http://ps.al/');" class="prog1">Vizito</button>
+        </span>
+
+        <span class="span-2">
+    <img class="lider" src="Kryetaret\krye_qori.webp">
+    <div class="infosm">
+        <h1>Lëvizja "Bashkë"</h1>
+        <p class="kryetar"><b>Kryetar: </b>Arlind Qori</p>
+            <hr class="hrline-vl">
+            </div>
+            <p class="prez"><b>Lëvizja Bashkë</b> është një parti politike shqiptare. Ajo u themelua më 18 dhjetor 2022 nga anëtarë dhe aktivistë të e ashtuquajturës Organizata Politike.<br><br> Në 2023, Lëvizja Bashkë mori pjesë në zgjedhjet vendore më 14 maj 2023, ku ajo kandidoi në garën për kryetar bashkie me Arlind Qorin si kandidat. Në këto zgjedhje, LB fitoi <b>13851 vota, ose 4.77%</b> në Bashkinë e Tiranës duke u rankuar të tretët. Kjo i mundësoi Lëvizjes Bashkë 1 mandat në Këshillin e Bashkisë, të cilin e mban anëtarja e LB Mirela Ruko. </p>
+            <p class="shkarko">Mëso programin elektoral këtu:</p>
+            <button onclick="window.open('https://levizjabashke.al/assets/Programi%20Qeveris%C3%ABs%20i%20L%C3%ABvizjes%20BASHK%C3%8B%202025.pdf');" class="prog">Programi</button>
+            <button onclick="window.open('https://levizjabashke.al/');" class="prog1">Vizito</button>
+        </span>
+
+    <span class="span-3">
+    <img class="lider" src="Kryetaret\krye_doshi.webp">
+    <div class="infosm">
+        <h1>Partia Socialdemokrate</h1>
+        <p class="kryetar"><b>Kryetar: </b>Tom Doshi</p>
+            <hr class="hrline-vl">
+            </div>
+            <p class="prez"><b>Partia Socialdemokrate e Shqipërisë</b> është një parti e vogël socialdemokrate politike në Shqipëri. Themeluesi i saj është Skënder Gjinushi, ish-ministër i Arsimit (1987–1991) dhe Kryetar i Kuvendit (1997–2001).
+                <br><br>Për zgjedhjet e vitit 2009 ishte pjesë e aleancës "Bashkimi për Ndryshim", por mori vetëm 1.8% të votave kombëtare dhe humbi të gjitha mandatet. Në zgjedhjet e 2017 Partia Socialdemokrate fitoi një mandat. Zgjedhjet e 2021 panë që partia fitoi <b>tre vende</b>.</p>
+            <p class="shkarko">Mëso programin elektoral këtu:</p>
+            <button onclick="window.open('https://psd.al/wp-content/uploads/2025/04/Programi_2025-4.pdf');" class="prog">Programi</button>
+            <button onclick="window.open('https://psd.al/');" class="prog1">Vizito</button>
+    </span>
+
+        </div>
+    </div>
+
+<script type="text/javascript">
+    
+    document.addEventListener("DOMContentLoaded", function () {
+    const spans = document.querySelectorAll(".prezantimi span");
+    const div = document.querySelector(".open1");
+
+    // Background images for each span
+    const backgrounds = [
+        "Partite/1x/ps.webp", // First span links to ps.jpg
+        "Partite/1x/lb.webp", // Second span links to lb.jpg
+        "Partite/1x/socdem.webp" // Third span links to socdem.jpg
+    ];
+
+    // Function for span-1
+    function showSpan1() {
+        // Hide all spans
+        hideAllSpans();
+        
+        // Show span-1
+        const span1 = document.querySelector(".prezantimi .span-1");
+        if (span1) span1.style.display = "block";
+
+        // Change the background to background_ps.jpg
+        div.style.backgroundImage = `url('${backgrounds[0]}')`;
+    }
+
+    // Function for span-2
+    function showSpan2() {
+        // Hide all spans
+        hideAllSpans();
+        
+        // Show span-2
+        const span2 = document.querySelector(".prezantimi .span-2");
+        if (span2) span2.style.display = "block";
+
+        // Change the background to background_lb.jpg
+        div.style.backgroundImage = `url('${backgrounds[1]}')`;
+    }
+
+    // Function for span-3
+    function showSpan3() {
+        // Hide all spans
+        hideAllSpans();
+        
+        // Show span-3
+        const span3 = document.querySelector(".prezantimi .span-3");
+        if (span3) span3.style.display = "block";
+
+        // Change the background to background_socdem.jpg
+        div.style.backgroundImage = `url('${backgrounds[2]}')`;
+    }
+
+    // Function to hide all spans
+    function hideAllSpans() {
+        spans.forEach(span => {
+            span.style.display = "none";
+        });
+    }
+
+    // Add event listeners to the images (assuming .logo images are linked to each span)
+    document.querySelectorAll(".logo")[0].addEventListener("click", showSpan1); // First image
+    document.querySelectorAll(".logo")[1].addEventListener("click", showSpan2); // Second image
+    document.querySelectorAll(".logo")[2].addEventListener("click", showSpan3); // Third image
+});
+
+
+
+
+
+
+</script>
+
+
+
+</body></html>
